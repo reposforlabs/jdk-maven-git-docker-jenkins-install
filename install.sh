@@ -3,7 +3,7 @@ sudo apt-get remove needrestart -y
 sudo apt upgrade -y
 
 #Install JDK 17
-sudo apt install openjdk-17-jdk
+sudo apt install openjdk-17-jdk -y
 sudo sed -i '3iexport JAVA_HOME=/usr/lib/jvm/java-1.17.0-openjdk-amd64' /etc/profile
 sudo sed -i '4iexport PATH=$JAVA_HOME/bin:$PATH' /etc/profile
 source /etc/profile
