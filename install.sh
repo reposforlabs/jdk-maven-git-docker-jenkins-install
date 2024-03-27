@@ -12,9 +12,9 @@ source /etc/profile
 wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
 sudo tar xf apache-maven-3.9.6-bin.tar.gz -C /opt
 sudo ln -s /opt/apache-maven-3.9.6 /opt/maven
-sudo sed -i '5export M2_HOME=/opt/maven' /etc/profile
-sudo sed -i '6export MAVEN_HOME=/opt/maven' /etc/profile
-sudo sed -i '7export PATH=${M2_HOME}/bin:${PATH}' /etc/profile
+sudo sed -i '5iexport M2_HOME=/opt/maven' /etc/profile
+sudo sed -i '6iexport MAVEN_HOME=/opt/maven' /etc/profile
+sudo sed -i '7iexport PATH=${M2_HOME}/bin:${PATH}' /etc/profile
 source /etc/profile
 
 #Install Jenkins
