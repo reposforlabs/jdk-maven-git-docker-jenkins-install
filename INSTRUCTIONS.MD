@@ -2,3 +2,7 @@
 ```
 bash <(curl https://raw.githubusercontent.com/reposforlabs/jdk-maven-git-docker-jenkins-install/main/install.sh)
 ```
+OR
+```
+curl -sL https://raw.githubusercontent.com/reposforlabs/jdk-maven-git-docker-jenkins-install/refs/heads/main/install.sh | sudo bash
+```
