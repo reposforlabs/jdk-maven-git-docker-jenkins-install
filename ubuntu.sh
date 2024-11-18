@@ -9,7 +9,7 @@ sudo sed -i '4iexport PATH=$JAVA_HOME/bin:$PATH' /etc/profile
 source /etc/profile
 
 #Install Maven
-wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.9-bin.tar.gz
+wget https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz
 sudo tar xf apache-maven-3.9.9-bin.tar.gz -C /opt
 sudo ln -s /opt/apache-maven-3.9.9 /opt/maven
 sudo sed -i '5iexport M2_HOME=/opt/maven' /etc/profile
